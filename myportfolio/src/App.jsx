@@ -1,9 +1,22 @@
-
+import { useEffect } from "react";
+import { Header } from "./components/header/Header";
+import { BrowserRouter } from "react-router-dom";
 function App() {
-    return (
-    <div className="w-screen h-screen bg-red-500">
-      Hello! This is vite and react.
+  console.log('check the render parent');
+  useEffect(()=>{
+    console.log("Init");
+
+  },[]);
+  return(
+    <BrowserRouter>
+    <div>
+    <Header/>
+    <div> 
+      Body
     </div>
+
+    </div>
+    </BrowserRouter>
   )
 }
 
