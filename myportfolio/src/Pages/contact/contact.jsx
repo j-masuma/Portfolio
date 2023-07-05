@@ -1,6 +1,10 @@
 function Contact(){
     return(
-        <div>Contact</div>
+        <div className="flex flex-row">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     );
 
 }
