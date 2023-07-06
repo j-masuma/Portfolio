@@ -1,27 +1,23 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
+//import Contact from "../../Pages/contact/Contact";
 const menulist = [
     {
       id: 1,
-      title: "HOME",
+      title: "Home",
       path:'/',
     },
     {
       id: 2,
-      title: "ABOUT",
+      title: "About",
       path:'/About',
     },
     {
       id: 3,
-      title: "SERVICES",
+      title: "Services",
       path:'/Services',
-    },
-    {
-      id: 4,
-      title: "CONATACT",
-      path:'/Contact',
-    },
+    }
+    
   ];
 export function Header(){
         const [theme, setTheme]= useState('green');
@@ -31,24 +27,25 @@ export function Header(){
         
           },[theme]);
       return (
-        <div className="flex justify-between ">
+        <div className="flex flex-row justify-between content-center">
           <div>
-            <h2 className="text-[24px] font-bold text-white" onClick={()=>setTheme('red')}>
-              JAVARIA <span className="text-red-800">MASOOMA {theme}</span>
+            <h2 className="text-blue-900 text-center font-poppins text-25 font-bold tracking-wider" onClick={()=>setTheme('red')}>
+              Javaria <span className="text-blue-700">Masooma</span>
             </h2>
           </div>
-    
-          <div className="flex gap-4">
+     
+          <div className="flex gap-4 font-poppins">
             {menulist && menulist.map((item) => (
               <div key={item.id}>
-                <Link to={item.path} className="text-white hover:border-[1px] border-green-800 rounded-full px-3 py-1 cursor-pointer">
+                <Link to={item.path} className=" hover:border-[1px] border-green-800 rounded-full px-3 py-1 cursor-pointer">
                   {item.title}
                 </Link>
+            
               </div>
             ))}
-            <Link to='www.google.com' className="text-white hover:border-[1px] h-8 border-green-800 rounded-full px-3 py-1 cursor-pointer hover:bg-gradient-to-r from-red-500 to bg-red-900">
-              HIRE ME
-            </Link>
+            <div className="text-white text-center font-poppins w-25 tracking-wide p-1 rounded-full bg-blue-500 hover:bg-blue-700">
+                <Link to='/Contact'><p>Contact Me</p></Link>
+            </div>
           </div>
         </div>
       );

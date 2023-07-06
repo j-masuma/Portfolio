@@ -5,21 +5,21 @@ import Etect from './etech.svg';
 import Ecom from './ecommerce.svg';
 export  function Port() {
   return (
-    <div className='flex flex-col bg-gray-300'>
+    <div className='flex flex-col'>
         <div>
-            <h1 className='font-bold text-center text-2xl p-10'>My Portfolio</h1>
+        <h1 className='text-2xl text-blue-700  font-bold text-center p-10 '>My <span className=" text-blue-900 bg-opacity-100">Portfolio</span></h1>
         </div>
-        <div className=" flex flex-row justify-around">
+        <div className=" flex flex-row justify-around text-purple-800">
             <div>
-                <div><h1 className='font-bold'>SendPay</h1></div>
+                <div><h1 className='font-bold m-3'>SendPay</h1></div>
                 <img src={Sendpay} alt="SendPay" />
             </div>
             <div>
-                <div><h1 className='font-bold'>E-Commerce</h1></div>
+                <div><h1 className='font-bold font-montserrat m-3'>E-Commerce</h1></div>
                 <img src={Ecom} alt="E-Commerce" />
             </div>
             <div>
-                <div><h1 className='font-bold'>BeatsLearning</h1></div>
+                <div><h1 className='font-bold m-3'>BeatsLearning</h1></div>
                 <img src={Etect} alt="Etech" />
             </div>
         

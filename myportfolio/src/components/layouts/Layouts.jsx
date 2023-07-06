@@ -3,14 +3,15 @@ import {Header} from '../header/Header';
 import {Hero} from '../hero/Hero';
 import {Passion} from '../passions/Passion';
 import {Port} from '../port/Port';
+import Contact from '../../Pages/contact/Contact';
 
 // eslint-disable-next-line react/prop-types
-export default function Layouts({childern}) {
+export default function Layouts({children}) {
   return (
-    <div className='flex flex-col md:space-x-3 p-16'>
-        <div className="flex flex-col bg-green-500 h-20 ">
+    <div className='flex flex-col md:space-x-3 p-4 border border-blue-900'>
+        <div className="flex flex-col">
           <Header/>
-          <div>{childern || <Outlet/>}</div>    
+          <div>{children || <Outlet/>}</div>    
         </div>
 
         <div>
@@ -24,6 +25,10 @@ export default function Layouts({childern}) {
 
         <div>
           <Port/>
+        </div>
+
+        <div>
+          <Contact/>
         </div>
 
     </div>

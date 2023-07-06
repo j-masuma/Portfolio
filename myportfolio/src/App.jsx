@@ -21,10 +21,10 @@ function App() {
  
          <Routes>
           <Route element={<Layouts/>}>
-          <Route exact path="/" element={<Home/>} />
-          <Route path="/About" element={<About/>} />
-          <Route path="/Services" element={<Services/>} />
-          <Route path="/Contact" element={<Contact/>} />
+            <Route exact path="/" element={<Home/>} />
+            <Route path="/About" element={<About/>} />
+            <Route path="/Services" element={<Services/>} />
+            <Route path="/Contact" element={<Contact/>} />
           </Route>
           </Routes>
           
