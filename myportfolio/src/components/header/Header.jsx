@@ -14,8 +14,13 @@ const menulist = [
     },
     {
       id: 3,
-      title: "Services",
-      path:'/Services',
+      title: "Passions",
+      path:'/Passion',
+    },
+    {
+      id: 4,
+      title: "Portfolio",
+      path:'/Port',
     }
     
   ];
@@ -27,7 +32,7 @@ export function Header(){
         
           },[theme]);
       return (
-        <div className="flex flex-row justify-between content-center">
+        <div className="flex flex-row justify-between content-center p-8">
           <div>
             <h2 className="text-blue-900 text-center font-poppins text-25 font-bold tracking-wider" onClick={()=>setTheme('red')}>
               Javaria <span className="text-blue-700">Masooma</span>

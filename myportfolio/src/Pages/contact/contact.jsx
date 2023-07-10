@@ -1,6 +1,7 @@
 import git from './Git.svg';
 import email from './Email.svg';
 import { Link } from "react-router-dom";
+import fb from './fb.jpg';
 
 function Contact(){
     return(
@@ -25,7 +26,7 @@ function Contact(){
                 <div >
                     
                     <Link to="https://github.com/j-masuma">
-                        <img src={git} alt="Git Hub Account" />
+                        <img src={fb} alt="Git Hub Account" />
                     </Link>
                 </div>
                 <div>
