@@ -19,7 +19,7 @@ function About(){
                         A Front-End Developer. </h2></div>
                     <div className='text-sm border '>
                         <p className=' m-3'>
-                        {homeData.description}
+                        {aboutData.description}
                            </p>
                     </div>
                 </div>
