@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { homeData } from '../../data/data';
+//import { homeData } from '../../data/data';
 import HeroImg from './heroImg 1.svg';
 import { getAllNotes } from '../../api/http';
 function About(){
