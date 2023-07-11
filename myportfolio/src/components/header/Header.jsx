@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { getAllNotes } from "../../api/http";
 //import Contact from "../../Pages/contact/Contact";
 const menulist = [
     {
@@ -25,6 +26,13 @@ const menulist = [
     
   ];
 export function Header(){
+  const [headerData, setHeaderData]=useState('');
+  useEffect(()=>{
+      getAllNotes().then(response=>{
+          setHeaderData(response);
+      });
+  },[]);
+
         const [theme, setTheme]= useState('green');
         console.log('check the render' , theme);
         useEffect(()=>{
@@ -35,7 +43,7 @@ export function Header(){
         <div className="flex flex-row justify-between content-center p-8">
           <div>
             <h2 className="text-blue-900 text-center font-poppins text-25 font-bold tracking-wider" onClick={()=>setTheme('red')}>
-              Javaria <span className="text-blue-700">Masooma</span>
+              {headerData.first_name} <span className="text-blue-700">{headerData.last_name}</span>
             </h2>
           </div>
      
