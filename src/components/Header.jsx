@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { getAllNotes } from "../../api/http";
+import { getAllNotes } from "../api/http";
 //import Contact from "../../Pages/contact/Contact";
 const menulist = [
   {

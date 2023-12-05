@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import HeroImg from "./heroImg 1.svg";
+import HeroImg from "../../assets/img/heroImg 1.svg";
 import { getAllNotes } from "../../api/http";
 function About() {
   const [aboutData, setAboutData] = useState("");
