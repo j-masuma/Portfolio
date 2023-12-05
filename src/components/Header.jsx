@@ -38,14 +38,14 @@ export function Header() {
     console.log("Init", theme);
   }, [theme]);
   return (
-    <div className="flex flex-row justify-between content-center p-8">
+    <div className="flex flex-row justify-between content-center p-10 m-4">
       <div>
         <h2
           className="text-blue-900 text-center font-poppins text-25 font-bold tracking-wider"
           onClick={() => setTheme("red")}
         >
           {headerData.name}{" "}
-          <span className="text-blue-700">{headerData.last_name}</span>
+          <span className="text-blue-700">{headerData.name}</span>
         </h2>
       </div>
 

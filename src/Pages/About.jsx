@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import HeroImg from "../../assets/img/heroImg 1.svg";
+import HeroImg from "../assets/img/heroImg 1.svg";
 import { getAllNotes } from "../api/http";
 function About() {
   const [aboutData, setAboutData] = useState("");
@@ -10,7 +10,7 @@ function About() {
   }, []);
 
   return (
-    <div className="flex flex-row justify-between pl-8">
+    <div className="flex flex-row justify-between p-10 m-4">
       <div className="flex flex-col font-bold gap-4 text-blue-900 bg-opacity-100">
         <div className="text-3xl font-Poppins ">
           <h1>Hi!</h1>

@@ -1,6 +1,6 @@
-import Sendpay from "../../assets/img/SendPay.svg";
-import Etect from "../../assets/img/etech.svg";
-import Ecom from "../../assets/img/ecommerce.svg";
+import Sendpay from "../assets/img/SendPay.svg";
+import Etect from "../assets/img/etech.svg";
+import Ecom from "../assets/img/ecommerce.svg";
 export function Port() {
   return (
     <div className="flex flex-col">
