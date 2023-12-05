@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import HeroImg from "../../assets/img/heroImg 1.svg";
-import { getAllNotes } from "../../api/http";
+import { getAllNotes } from "../api/http";
 function About() {
   const [aboutData, setAboutData] = useState("");
   useEffect(() => {
@@ -15,11 +15,11 @@ function About() {
         <div className="text-3xl font-Poppins ">
           <h1>Hi!</h1>
           <h2 className="">
-            I am {aboutData.last_name}. <br />A Front-End Developer.{" "}
+            I am {aboutData.name}. <br />A Front-End Developer.{" "}
           </h2>
         </div>
         <div className="text-sm border ">
-          <p className=" m-3">{aboutData.description}</p>
+          <p className=" m-3">{aboutData.model}</p>
         </div>
       </div>
 

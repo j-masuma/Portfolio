@@ -1,12 +1,12 @@
 import { Route, Routes } from "react-router";
 
 //import  Services  from "./Pages/services/Services";
-import Home from "./Pages/home/Home";
-import About from "./Pages/about/About";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
 import Layouts from "./components/Layouts";
-import Contact from "./Pages/contact/contact";
-import { Passion } from "./Pages/passions/Passion";
-import { Port } from "./Pages/port/Port";
+import Contact from "./Pages/contact";
+import { Passion } from "./Pages/Passion";
+import { Port } from "./Pages/Port";
 
 const App = () => (
   <Routes>

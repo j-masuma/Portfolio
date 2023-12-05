@@ -44,7 +44,7 @@ export function Header() {
           className="text-blue-900 text-center font-poppins text-25 font-bold tracking-wider"
           onClick={() => setTheme("red")}
         >
-          {headerData.first_name}{" "}
+          {headerData.name}{" "}
           <span className="text-blue-700">{headerData.last_name}</span>
         </h2>
       </div>
